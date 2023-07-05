@@ -3,7 +3,7 @@ import { Image, Text, View } from 'react-native'
 
 import { cardStyle } from './styles/Card.styles'
 
-const Card = (props) => {
+const Card = (props: any) => {
 	const { item, shadow, key, width } = props
 	console.log('width', width)
 	return (
