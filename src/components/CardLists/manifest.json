@@ -1,0 +1,79 @@
+{
+	"displayName": "List Cards",
+	"defaultWidth": 500,
+	"defaultHeight": 300,
+	"components": "./index.js",
+	"props": [
+		{
+      "name": "listItems",
+      "displayName": "Select List",
+      "type": "list"
+    },
+		{
+			"name": "column",
+			"displayName": "Column",
+			"type": "number",
+			"default": 1
+		}
+	],
+	"childComponents": [
+		{
+			"name": "image",
+      "displayName": "Image",
+			"defaultWidth": 250,
+			"role": "listItem",
+			"reference": "listItems",
+			"props": [
+				{
+					"name": "imageSrc",
+					"displayName": "Image",
+					"type": "image"
+				}
+			]
+		},
+		{
+			"name": "profile",
+      "displayName": "Profile",
+			"role": "listItem",
+			"reference": "listItems",
+			"props": [
+				{
+					"name": "dataName",
+					"displayName": "Name",
+					"type": "text",
+					"default": "Happy Hacking",
+					"styles": {
+						"fontFamily": "@body",
+						"fontSize": 14,
+						"textAlignment": "center",
+						"color": "#00A898"
+					}
+				},
+				{
+					"name": "position",
+					"displayName": "Position",
+					"type": "text",
+					"default": "Happy Hacking",
+					"styles": {
+						"fontFamily": "@body",
+						"fontSize": 14,
+						"textAlignment": "center",
+						"color": "#00A898"
+					}
+				}
+			]
+		},
+		{
+      "name": "card",
+      "displayName": "Card",
+			"props": [
+				{
+					"name": "shadow",
+					"displayName": "Shadow",
+					"type": "boolean",
+        	"default": "true"
+				}
+			]
+    }
+	]
+}

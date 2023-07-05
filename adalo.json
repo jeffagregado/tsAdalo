@@ -1,0 +1,12 @@
+{
+  "displayName": "Card Lists",
+  "components": [
+    {
+      "name": "CardLists",
+      "manifest": "./build/components/CardLists/manifest.json"
+    }
+  ],
+  "author": "",
+  "description": "",
+  "logo": "./example-logo.png"
+}
